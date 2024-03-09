@@ -87,6 +87,10 @@ section h2 {
     text-align: center;
 }
 
+.skills-section ul{
+    list-style-type: none;
+}
+
 /* Projekt och blogginlägg */
 .project, .blog-post {
     margin-bottom: 20px;
