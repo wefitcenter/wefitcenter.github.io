@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dina Projekt</title>
+    <title>Projekt</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <h1>William Skog</h1>
-        <nav>
+    <!-- Header börjar här -->
+    <header class="site-header">
+        <h1 class="site-title">Ditt Namns Portfölj</h1>
+        <nav class="main-nav">
             <ul>
                 <li><a href="#om-mig">Om Mig</a></li>
                 <li><a href="#fardigheter">Färdigheter</a></li>
@@ -21,41 +22,53 @@
             </ul>
         </nav>
     </header>
+    <!-- Header slutar här -->
+
+    <!-- Huvudinnehåll börjar här -->
     <main>
-        <section id="om-mig">
+        <!-- Om mig sektion -->
+        <section id="om-mig" class="about-section">
             <h2>Om Mig</h2>
             <p>Här kommer en mer detaljerad beskrivning om dig, din bakgrund, dina intressen inom software engineering och vad du brinner för.</p>
         </section>
-        <section id="fardigheter">
+
+        <!-- Färdigheter sektion -->
+        <section id="fardigheter" class="skills-section">
             <h2>Färdigheter</h2>
             <ul>
-                <li>Programmeringsspråk: Python, JavaScript</li>
+                <!-- <li>Programmeringsspråk: Java, Python, JavaScript</li> -->
                 <li>Webbutveckling: HTML, CSS, React</li>
-                <li>Databaser: MySQL, MongoDB</li>
+                <li>Databaser: MySQL</li>
                 <li>Verktyg: Git, Microsoft 365</li>
                 <!-- Lägg till fler färdigheter här -->
             </ul>
         </section>
-        <section id="projekt">
+
+        <!-- Projekt sektion -->
+        <section id="projekt" class="projects-section">
             <h2>Projekt</h2>
-            <article>
+            <article class="project">
                 <h3>Projekt 1</h3>
                 <img src="path/to/project1-image.jpg" alt="Projekt 1 skärmbild" />
-                <p>Beskrivning av ditt första projekt. Det kan vara en app, en webbplats, ett spel, eller något annat du har arbetat med.</p>
+                <p>Beskrivning av ditt första projekt.</p>
                 <a href="link-till-projekt-demo" target="_blank">Demo</a> | <a href="link-till-kod-repo" target="_blank">Kod</a>
             </article>
             <!-- Lägg till fler projekt här -->
         </section>
-        <section id="blogg">
+
+        <!-- Blogg sektion -->
+        <section id="blogg" class="blog-section">
             <h2>Blogg</h2>
-            <article>
+            <article class="blog-post">
                 <h3>Blogginlägg Titel</h3>
                 <p>Kort sammanfattning av inlägget...</p>
                 <a href="link-till-fullständigt-blogginlägg">Läs mer</a>
             </article>
             <!-- Lägg till fler blogginlägg här -->
         </section>
-        <section id="kontakt">
+
+        <!-- Kontakt sektion -->
+        <section id="kontakt" class="contact-section">
             <h2>Kontakt</h2>
             <form action="din-server-behandlings-sida" method="post">
                 <label for="name">Namn:</label>
@@ -68,14 +81,19 @@
             </form>
         </section>
     </main>
-    <aside>
+    <!-- Huvudinnehåll slutar här -->
+
+    <!-- Ytterligare resurser eller sidopanel -->
+    <aside class="sidebar">
         <h2>Ytterligare Resurser</h2>
         <ul>
             <li><a href="#">Länk 1</a></li>
             <li><a href="#">Länk 2</a></li>
         </ul>
     </aside>
-    <footer>
+
+    <!-- Webbplatsens fot -->
+    <footer class="site-footer">
         <p>© [År] [Ditt Namn]. Alla rättigheter förbehållna.</p>
     </footer>
 </body>
