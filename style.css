@@ -43,10 +43,8 @@ a:hover {
     margin: 0px 0px 20px;
     font-weight: normal;
     text-align: center;
-    /* margin: 20px auto; */
-    top: 43.9vh;
+    top: 80vh;
     position: relative;
-    left: 26.6vh;
 }
 
 /* Huvudnavigation */
@@ -55,7 +53,7 @@ a:hover {
     padding: 0;
     text-align: center;
     position: relative;
-    top: 55vh;
+    top: 85vh;
 }
 
 .main-nav ul li {
@@ -79,6 +77,7 @@ section {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     padding: 20px;
+    text-align: center;
 }
 
 /* Sektionstitlar */
