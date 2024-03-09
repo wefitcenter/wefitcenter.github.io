@@ -1,9 +1,83 @@
-<html>
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dina Projekt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
 <body>
-  <h1>William Skog</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+    <header>
+        <h1>Ditt Namns Portfölj</h1>
+        <nav>
+            <ul>
+                <li><a href="#om-mig">Om Mig</a></li>
+                <li><a href="#fardigheter">Färdigheter</a></li>
+                <li><a href="#projekt">Projekt</a></li>
+                <li><a href="#blogg">Blogg</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="om-mig">
+            <h2>Om Mig</h2>
+            <p>Här kommer en mer detaljerad beskrivning om dig, din bakgrund, dina intressen inom software engineering och vad du brinner för.</p>
+        </section>
+        <section id="fardigheter">
+            <h2>Färdigheter</h2>
+            <ul>
+                <li>Programmeringsspråk: Java, Python, JavaScript</li>
+                <li>Webbutveckling: HTML, CSS, React</li>
+                <li>Databaser: MySQL, MongoDB</li>
+                <li>Verktyg: Git, Docker, Jenkins</li>
+                <!-- Lägg till fler färdigheter här -->
+            </ul>
+        </section>
+        <section id="projekt">
+            <h2>Projekt</h2>
+            <article>
+                <h3>Projekt 1</h3>
+                <img src="path/to/project1-image.jpg" alt="Projekt 1 skärmbild" />
+                <p>Beskrivning av ditt första projekt. Det kan vara en app, en webbplats, ett spel, eller något annat du har arbetat med.</p>
+                <a href="link-till-projekt-demo" target="_blank">Demo</a> | <a href="link-till-kod-repo" target="_blank">Kod</a>
+            </article>
+            <!-- Lägg till fler projekt här -->
+        </section>
+        <section id="blogg">
+            <h2>Blogg</h2>
+            <article>
+                <h3>Blogginlägg Titel</h3>
+                <p>Kort sammanfattning av inlägget...</p>
+                <a href="link-till-fullständigt-blogginlägg">Läs mer</a>
+            </article>
+            <!-- Lägg till fler blogginlägg här -->
+        </section>
+        <section id="kontakt">
+            <h2>Kontakt</h2>
+            <form action="din-server-behandlings-sida" method="post">
+                <label for="name">Namn:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">E-post:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Meddelande:</label>
+                <textarea id="message" name="message" required></textarea>
+                <input type="submit" value="Skicka">
+            </form>
+        </section>
+    </main>
+    <aside>
+        <h2>Ytterligare Resurser</h2>
+        <ul>
+            <li><a href="#">Länk 1</a></li>
+            <li><a href="#">Länk 2</a></li>
+        </ul>
+    </aside>
+    <footer>
+        <p>© [År] [Ditt Namn]. Alla rättigheter förbehållna.</p>
+    </footer>
 </body>
 
 </html>
