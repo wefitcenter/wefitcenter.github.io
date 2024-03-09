@@ -38,6 +38,7 @@ a:hover {
 .site-title {
     margin: 0 20px;
     font-weight: normal;
+    text-align: center;
 }
 
 /* Huvudnavigation */
@@ -128,14 +129,6 @@ section h2 {
 @media (min-width: 768px) {
     .main-nav ul li {
         margin: 0 15px;
-    }
-
-    .site-title {
-        float: left;
-    }
-
-    .main-nav ul {
-        float: right;
     }
 
     .main-nav ul li a {
