@@ -1,4 +1,4 @@
-/* Bas och Reset */
+/* Grundläggande reset och basstilar */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,13 +6,12 @@
 }
 
 body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 16px;
+    line-height: 1.5;
     color: #333;
-    line-height: 1.6;
     background-color: #f5f5f5;
     padding: 20px;
-    padding-bottom: 100px; /* Footer fix */
 }
 
 img {
@@ -20,128 +19,132 @@ img {
     height: auto;
 }
 
-/* Navigation */
-header {
-    background: #007bff;
-    color: #fff;
-    padding-top: 30px;
-    padding-bottom: 15px;
-    margin-bottom: 20px;
+a {
+    color: #007bff;
+    text-decoration: none;
 }
 
-header h1 {
-    margin: 0 0 15px 0;
-    padding-left: 20px;
+a:hover {
+    text-decoration: underline;
+}
+
+/* Webbplatsens header */
+.site-header {
+    background-color: #333;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+.site-title {
+    margin: 0 20px;
     font-weight: normal;
 }
 
-nav ul {
-    list-style: none;
-    padding-left: 20px;
+/* Huvudnavigation */
+.main-nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 10px;
+.main-nav ul li {
+    display: inline-block;
+    margin: 0 10px;
 }
 
-nav ul li a {
+.main-nav ul li a {
     color: #fff;
-    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.main-nav ul li a:hover {
+    background-color: #007bff;
 }
 
 /* Sektioner */
 section {
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     padding: 20px;
-    background: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+/* Sektionstitlar */
 section h2 {
-    margin-top: 0;
-}
-
-/* Artiklar och Blogginlägg */
-article {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
     margin-bottom: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #eaeaea;
 }
 
-article h3 {
-    color: #007bff;
+/* Projekt och blogginlägg */
+.project, .blog-post {
+    margin-bottom: 20px;
 }
 
 /* Kontaktformulär */
-form label {
-    display: block;
-    margin-top: 10px;
+.contact-section form {
+    max-width: 600px;
+    margin: auto;
 }
 
-form input[type="text"],
-form input[type="email"],
-form textarea {
+.contact-section label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-section input[type="text"],
+.contact-section input[type="email"],
+.contact-section textarea {
     width: 100%;
     padding: 10px;
-    margin-top: 5px;
+    margin-bottom: 20px;
     border: 1px solid #ccc;
 }
 
-form input[type="submit"] {
-    background: #007bff;
-    color: #fff;
+.contact-section input[type="submit"] {
+    background-color: #333;
+    color: white;
     padding: 10px 20px;
-    border: 0;
+    border: none;
     cursor: pointer;
-    margin-top: 10px;
 }
 
-form input[type="submit"]:hover {
-    background: #0056b3;
+.contact-section input[type="submit"]:hover {
+    background-color: #007bff;
 }
 
-/* Aside */
-aside {
-    background: #f9f9f9;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-aside h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-/* Footer */
-footer {
-    background: #333;
-    color: #fff;
+/* Sidopanel och fot */
+.sidebar, .site-footer {
     text-align: center;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding: 10px 0;
+    padding: 20px;
+    background-color: #eee;
 }
 
-/* Responsiv Design */
-@media (max-width: 768px) {
-    header, nav ul, footer {
-        text-align: center;
+.site-footer {
+    margin-top: 20px;
+}
+
+/* Responsiv design */
+@media (min-width: 768px) {
+    .main-nav ul li {
+        margin: 0 15px;
     }
 
-    nav ul {
-        padding: 0;
+    .site-title {
+        float: left;
     }
 
-    nav ul li {
-        display: block;
-        margin-top: 5px;
+    .main-nav ul {
+        float: right;
     }
 
-    /* Justering för mindre skärmar */
-    body {
-        padding: 10px;
+    .main-nav ul li a {
+        padding: 10px 15px;
+    }
+
+    header:after {
+        content: "";
+        display: table;
+        clear: both;
     }
 }
