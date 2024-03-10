@@ -34,7 +34,7 @@ a:hover {
     color: #ffffff;
     padding: 20px 0;
     width: 100%;
-    height: auto; /* Changed from 100vh to auto for better mobile view */
+    height: 100vh; /* Changed from 100vh to auto for better mobile view */
 }
 
 .site-title {
