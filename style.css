@@ -34,15 +34,15 @@ a:hover {
     color: #ffffff;
     padding: 20px 0;
     width: 100%;
-    height: 100vh;
+    height: auto; /* Changed from 100vh to auto for better mobile view */
 }
 
 .site-title {
     margin: 0px 0px 20px;
     font-weight: normal;
     text-align: center;
-    top: 80vh;
     position: relative;
+    top: 50px; /* Adjusted for mobile view */
 }
 
 /* Huvudnavigation */
@@ -51,7 +51,7 @@ a:hover {
     padding: 0;
     text-align: center;
     position: relative;
-    top: 85vh;
+    top: 60px; /* Adjusted for mobile view */
 }
 
 .main-nav ul li {
@@ -74,9 +74,8 @@ section {
     background-color: #fff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
-    padding: 100px 400px;
+    padding: 20px; /* Adjusted padding for better mobile view */
 }
-
 
 /* Sektionstitlar */
 section h2 {
@@ -138,24 +137,16 @@ section h2 {
 }
 
 /* Responsiv design */
-@media (min-width: 768px) {
-    .main-nav ul li {
-        margin: 0 15px;
+@media (max-width: 767px) {
+    .site-title, .main-nav ul {
+        top: 20px; /* Adjusted for better mobile alignment */
     }
+
     section {
-    background-color: #fff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    padding: 10px 20px;
-}
-
-    .main-nav ul li a {
-        padding: 10px 15px;
+        padding: 20px; /* Makes sections look better on mobile */
     }
 
-    header:after {
-        content: "";
-        display: table;
-        clear: both;
+    .contact-section form {
+        padding: 0 20px; /* Allows for padding on smaller screens */
     }
 }
