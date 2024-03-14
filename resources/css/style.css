@@ -44,7 +44,7 @@ a:hover {
 
 
 .site-title {
-    font-size: 2.5rem;
+    font-size: 4rem;
     color:#1aa518;
     display: flex;
     position: relative;
@@ -63,7 +63,7 @@ a:hover {
     color: grey;
     justify-content: center;
     align-items: center;
-    top:85vh;
+    top:80vh;
 }
 
 .main-nav ul li {
