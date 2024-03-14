@@ -7,11 +7,12 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 18px;
+    line-height: 1.6;
     color: #333;
     background-color: #f5f5f5;
     padding: 0px;
+    text-align: justify;
 }
 
 img {
@@ -31,7 +32,7 @@ a:hover {
 /* Webbplatsens header */
 .site-header {
     background-color: #000000;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/bgimage.jpg); /* Added overlay */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/darkbg.png); /* Added overlay */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -94,6 +95,7 @@ section h2 {
     border-bottom: 2px solid #eee;
     padding-bottom: 10px;
     margin-bottom: 20px;
+    font-size: 35px;
 }
 
 .skills-section ul{
@@ -161,3 +163,45 @@ section h2 {
         padding: 0 20px; /* Allows for padding on smaller screens */
     }
 }
+
+
+
+/*Styling for cheat sheets page*/
+.html-cheat-sheet-headings h1 {
+    font-size: 40px;
+}
+.html-cheat-sheet-headings h2 {
+    border: none;
+    padding: 0;
+    margin:0;
+    font-size: 35px;
+}
+.html-cheat-sheet-headings h3 {
+    font-size: 30px;
+}
+.html-cheat-sheet-headings h4 {
+    font-size: 25px;
+}
+.html-cheat-sheet-headings h5 {
+    font-size: 20px;
+}
+.html-cheat-sheet-headings h6 {
+    font-size: 15px;
+}
+.cheat-sheet-content {
+    display: flex; /* Arrange elements horizontally */
+  }
+  
+  .html-cheat-sheet-headings,
+  .code-snippet {
+    flex: 1; /* Make elements share available space equally */
+    padding-top: 1rem; /* Add some padding for readability */
+  }
+  .code-snippet h4 {
+    padding-left: 20%;
+    margin-top: -5%;
+    font-size: 25px
+}
+  
+
+/*Styling for cheat sheets page*/
