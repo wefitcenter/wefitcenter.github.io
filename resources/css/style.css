@@ -152,8 +152,29 @@ section h2 {
 
 /* Responsiv design */
 @media (max-width: 767px) {
- /*   .site-title, .main-nav ul {
-        top: 20px; /* Adjusted for better mobile alignment */
+    .site-title {
+        font-size: 3.5rem;
+        color:#1aa518;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+        top:50vh;
+    }
+    
+    /* Huvudnavigation */
+    .main-nav ul {
+        font-size: 16px;
+        list-style-type: none;
+        padding: 0;
+        position: relative;
+        display: flex;
+        color: grey;
+        justify-content: center;
+        align-items: center;
+        top:80vh;
+    }
 
     section {
         padding: 20px; /* Makes sections look better on mobile */
