@@ -12,7 +12,6 @@ body {
     color: #333;
     background-color: #f5f5f5;
     padding: 0px;
-    text-align: justify;
 }
 
 img {
@@ -177,11 +176,9 @@ section h2 {
     }
 
     section {
-        padding: 20px; /* Makes sections look better on mobile */
-    }
-
-    .contact-section form {
-        padding: 0 20px; /* Allows for padding on smaller screens */
+        line-height: 1.6;
+        word-spacing: 1;
+        padding: 40px 40px; /* Makes sections look better on mobile */
     }
 }
 
