@@ -3,17 +3,15 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: monospace;
 }
 
 body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
     background: url("../resources/images/darkCamo.jpg") repeat; /* Camouflage background */
     color: #fff; /* White text */
     margin: 0;
     padding: 0px 20% 40px 20%; /* Adjusted padding for better responsiveness */
-    font-size: 1.2em;
-    word-spacing: 0.2px;
-    letter-spacing: 0.1px;
 }
 
 header {
@@ -49,6 +47,8 @@ header img {
 }
 
 .military-menu ul li a {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 700;
     background-color: rgba(0, 0, 0, 0.3);
     text-decoration: none;
     color: #fff;
@@ -79,11 +79,15 @@ section {
 }
 
 h2 {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 900;
     color: #FFD700; /* Orange heading */
     font-size: 26px;
     margin-bottom: 20px;
 }
 h3 {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 900;
     color: #fff; /* Orange heading */
     font-size: 20px;
     margin-bottom: 20px;
@@ -102,7 +106,7 @@ section ul {
  }
 
 .highlight {
-    color: #838fff; /* Orange for highlights */
+    color: #FFD700; /* Orange for highlights */
     font-weight: bold;
     font-size: 18px;
 }
