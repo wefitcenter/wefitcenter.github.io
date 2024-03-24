@@ -1,0 +1,340 @@
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+body {
+    background: url("../images/darkCamo.jpg") repeat; /* Camouflage background */
+    color: #fff; /* White text */
+    margin: 0;
+    padding: 0px 5% 40px 5%; /* Adjusted padding for better responsiveness */
+    font-size: 1.2em;
+    word-spacing: 0.2px;
+    letter-spacing: 0.1px;
+}
+
+header {
+    background-color: transparent;
+    color: #fff;
+    padding: 0px;
+    margin:0;
+    text-align: center;
+}
+header img {
+    width: 100%; /* Make the image responsive */
+    max-width: 300px; /* Limit maximum width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.military-menu {
+    background-color: transparent; /* Dark green menu bar */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.military-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.military-menu ul li {
+    display: inline;
+    margin: 0 10px; /* Adjusted margin for better spacing */
+}
+
+.military-menu ul li a {
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black background */
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 2px;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+.military-menu ul li a:hover {
+    background-color: #555;
+    border-color: #fff;
+}
+
+main {
+    color: #ddd; /* Light gray text */
+}
+
+section {
+    margin-bottom: 40px;
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black background */
+    padding: 20px;
+    border-radius: 2px;
+    border: 2px solid #333; /* Dark gray border */
+    color: #fff; /* White text within sections */
+}
+
+h2 {
+    color: #FFD700; /* Orange heading */
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.highlight {
+    color: #838fff; /* Orange for highlights */
+    font-weight: bold;
+}
+
+.schedule {
+    text-align: left; /* Left-align schedule sections */
+}
+
+.time {
+    color: #FFD700; /* Orange for time */
+}
+
+/* Two-column layout for specific sections */
+.two-col-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.two-col-container section {
+    width: 100%; /* Full width on smaller screens */
+    margin-bottom: 20px;
+}
+
+.exercise-icon {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.app {
+    width: 100%; /* Full width */
+    padding: 20px; /* Adjusted padding for better spacing */
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black background */
+    border-radius: 2px;
+    border: 2px solid #333; /* Dark gray border */
+    color: #fff; /* White text within sections */    
+}
+
+.inputs { 
+    width: 100%; 
+    display: flex; 
+    flex-direction: column; /* Stack inputs by default */
+    justify-content: center; 
+    align-items: center; /* Center align inputs */
+    gap: 20px; 
+} 
+
+.inputs > div { 
+    width: 100%; /* Take full width */
+    display: flex; 
+    flex-direction: column; 
+} 
+
+label { 
+    font-size: 1.2rem; 
+} 
+
+input, select { 
+    display: block; /* Display inputs and labels as block */
+    width: 100%; /* Take full width */
+    margin-top: 8px; 
+    margin-bottom: 5px; 
+    padding: 10px; 
+    font-size: large; 
+    background-color: rgba(85, 70, 47, 0.8); /* Semi-transparent green background */
+    color: white; 
+    border: 1px solid #ddd;
+    border-radius: 2px; 
+} 
+
+input:focus-visible { 
+    outline: 2px solid #FFD700; 
+} 
+
+input::-webkit-outer-spin-button, 
+input::-webkit-inner-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+} 
+
+button { 
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    background-color: rgba(85, 70, 47, 0.8); /* Semi-transparent green background */
+    font-size: 1.3rem; 
+    border: 1px solid #ddd;
+    border-radius: 2px; 
+    color: white; 
+    font-weight: bold; 
+    transition: scale 0.3s ease-in-out; 
+} 
+
+#editSection { 
+    width: 100%; 
+    display: flex; 
+    gap: 25px; 
+    justify-content: space-between; 
+} 
+
+#editSection > button { 
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    font-size: 1.3rem; 
+    border-radius: 5px; 
+    color: white; 
+    font-weight: bold; 
+    transition: scale 0.3s ease-in-out; 
+} 
+
+#updateEntry { 
+    background-image: linear-gradient(to right, #ec4899, #8b5cf6); 
+} 
+
+#cancelEdit { 
+    background-color: #ef4444; 
+} 
+
+#submit:hover, #updateEntry:hover, #cancelEdit:hover { 
+    scale: 1.02; 
+} 
+
+.hidden { 
+    display: none !important; 
+} 
+
+.edit, .delete { 
+    margin: 0 auto; 
+    padding: 5px 10px; 
+    font-size: 1.1rem; 
+    border-radius: 5px; 
+    background-color: transparent; 
+    color: white; 
+    border: 1px solid white; 
+} 
+
+.edit:hover, .delete:hover { 
+    background-color: #0a0a0a; 
+} 
+
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    position: relative; 
+    overflow: hidden; 
+} 
+
+th, td { 
+    text-align: center; 
+    padding
+    : 10px; 
+    border: 0; 
+} 
+
+tr {
+    font-size:0.85rem;
+}
+
+tr:nth-child(even) { 
+    background-color: #57534e; 
+} 
+
+tr:nth-child(odd) { 
+    background-color: #262626; 
+} 
+
+th { 
+    border-top: 3px solid #FFD700;
+    font-size: 0.85rem; 
+    background-color: rgba(85, 70, 47, 0.8); /* Semi-transparent green background */
+} 
+
+tbody > tr:hover { 
+    background-color: rgba(85, 70, 47, 1); /* Semi-transparent green background */
+    color: #FFD700; 
+} 
+
+.delete-animation { 
+    background-color: #ef4444 !important; 
+    animation: deleteAnimate 0.4s linear forwards; 
+} 
+
+@keyframes deleteAnimate { 
+    to { 
+        transform: translateX(100%); 
+    } 
+} 
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        padding: 0px 10px 40px 10px; /* Adjusted padding for better mobile layout */
+        font-size: 12px; /* Decrease font size for smaller screens */
+        line-height: 1.6;
+        letter-spacing: 0.2px;
+        word-spacing: 0.1px;
+    }
+
+    header img {
+        width: 100%; /* Make the image responsive */
+        max-width: 200px; /* Limit maximum width */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .military-menu ul li a, .military-menu ul li {
+        font-size:18px;
+        margin: 0px; /* Adjusted margin for better spacing */
+        display: inline-block;
+        padding: 5px 0px;
+        width:100%;
+        
+    }
+    section ul {
+        padding:0;
+    }
+
+    .app {
+        width: 100%; /* Full width */
+        padding: 20px; /* Adjusted padding for better spacing */
+        font-size: 18px; /* Increase font size for better readability */
+    }
+
+    .inputs {
+        align-items: center; /* Center align inputs on mobile */
+        gap: 10px; /* Decrease gap between inputs */
+    }
+
+    input, select, label {
+        font-size: medium; /* Adjust font size for better readability on mobile */
+    }
+
+    button {
+        font-size: 1rem; /* Decrease font size for better fit on mobile */
+    }
+
+    td, th {
+        font-size: 0.75rem;
+        margin:0px;
+        padding:5px 2px 5px 2px;
+        align-items: center;
+    }
+    
+}

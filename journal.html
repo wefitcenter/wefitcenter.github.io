@@ -1,0 +1,108 @@
+<!-- index.html -->
+
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Journal</title> 
+	<link rel="stylesheet" href="../wefitcenter.github.io/resources/css/style-delta-forest.css"> 
+</head> 
+
+<body> 
+    <header>
+        <img src="../wefitcenter.github.io/resources/images/deltalogo.png" alt="Delta Force Logo">
+      </header>
+    
+      <nav class="military-menu">
+        <ul>
+          <li><a href="overview.html">Overview</a></li>
+          <li><a href="journal.html">Journal</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Missions</a></li>
+            <li><a href="#">Profile</a></li>
+          </ul>
+        </nav>
+        <div class="app"> 
+            <h2>Gym Journal</h2> 
+            <div class="inputs"> 
+                <div> 
+                    <label for="exercise"> 
+                        Exercise
+                    </label> 
+                    <select id="exercise">
+                        <option value="bench_press">Bench Press</option>
+                        <option value="squats">Squats</option>
+                        <option value="deadlifts">Deadlifts</option>
+                        <!-- Lägg till fler övningar här -->
+                    </select>
+                </div> 
+                <div> 
+                    <label for="sets"> 
+                        Sets
+                    </label> 
+                    <input id="sets" type="number"> 
+                </div> 
+                <div> 
+                    <label for="reps"> 
+                        Reps
+                    </label> 
+                    <input id="reps" type="number"> 
+                </div> 
+                <div> 
+                    <label for="weight"> 
+                        Weight (in kg)
+                    </label> 
+                    <input id="weight" type="number"> 
+                </div> 
+                <div> 
+                    <label for="status"> 
+                        Status
+                    </label> 
+                    <select id="status">
+                        <option value="great">Great</option>
+                        <option value="good">Good</option>
+                        <option value="ok">OK</option>
+                        <option value="bad">Bad</option>
+                    </select>
+                </div> 
+            </div> 
+            <button id="submit">Log</button> 
+            <div id="editSection" class="hidden"> 
+                <button id="cancelEdit" onclick="cancelEdit()"> 
+                    Cancel 
+                </button> 
+                <button id="updateEntry" onclick="editRow()"> 
+                    Update 
+                </button> 
+            </div> 
+            <table> 
+                <thead> 
+                    <tr> 
+                        <th>Date</th> 
+                        <th>Exercise</th> 
+                        <th>Sets</th> 
+                        <th>Reps</th> 
+                        <th>Weight (kg)</th> 
+                        <th>Status</th> 
+                        <th>Edit</th> 
+                        <th>Delete</th> 
+                    </tr> 
+                </thead> 
+                <tbody id="output"> 
+                </tbody> 
+            </table> 
+        </div>
+        
+	<!-- Font Awesome JS CDN -->
+	<script src= 
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+			integrity= 
+"sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+			crossorigin="anonymous" referrerpolicy="no-referrer"> 
+	</script> 
+	<script src="../wefitcenter.github.io/script.js"></script> 
+</body> 
+
+</html>
