@@ -41,12 +41,11 @@ header img {
 
 .military-menu ul {
     list-style-type: none;
-    padding: 0;
+    padding: px 0px;
 }
 
 .military-menu ul li {
-    display: inline;
-    margin: 0 10px; /* Adjusted margin for better spacing */
+    margin: 3px 0px; /* Adjusted margin for better spacing */
 }
 
 .military-menu ul li a {
@@ -57,7 +56,8 @@ header img {
     border-radius: 2px;
     border: 1px solid #ddd;
     transition: all 0.3s ease;
-    display: block;
+    display: inline-block;
+    width: 100%;
 }
 
 .military-menu ul li a:hover {
@@ -310,14 +310,14 @@ tbody > tr:hover {
 
     .military-menu ul li a, .military-menu ul li {
         font-size:18px;
-        margin: 0px; /* Adjusted margin for better spacing */
+        margin: 1px 0px; /* Adjusted margin for better spacing */
         display: inline-block;
-        padding: 5px 0px;
         width:100%;
+        
         
     }
     section ul {
-        padding:0;
+        padding: 0px 0px 30px 0px;
     }
 
     .app {
