@@ -7,7 +7,7 @@
 }
 
 body {
-    background: url("darkCamo.jpg") repeat; /* Camouflage background */
+    background: url("../resources/images/darkCamo.jpg") repeat; /* Camouflage background */
     color: #fff; /* White text */
     margin: 0;
     padding: 0px 5% 40px 5%; /* Adjusted padding for better responsiveness */
