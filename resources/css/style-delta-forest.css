@@ -291,8 +291,8 @@ button:hover {
 .edit, .delete { 
     margin: 0 auto; 
     padding: 5px 10px; 
-    font-size: 1.1rem; 
-    border-radius: 5px; 
+    font-size: 0.95em;
+    border-radius: 2px; 
     background-color: transparent; 
     color: white; 
     border: 1px solid white; 
@@ -386,17 +386,16 @@ tbody > tr:hover {
         gap: 10px; /* Decrease gap between inputs */
     }
 
-    input, label {
+    input, select, label {
         font-size: 14px; /* Adjust font size for better readability on mobile */
         
     }
-    select {
+    #exercise {
         display: block; /* Display inputs and labels as block */
         width: 100%; /* Take full width */
         margin-top: 8px; 
         margin-bottom: 5px; 
         padding: 10px; 
-        font-size: large; 
         background-color: rgba(85, 70, 47, 0.8); /* Semi-transparent green background */
         color: white; 
         border: 1px solid #ddd;
