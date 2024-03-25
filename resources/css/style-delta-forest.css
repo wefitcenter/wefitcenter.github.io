@@ -74,12 +74,14 @@ header img {
     position: fixed;
     z-index: 1000;
     top: 0;
-    left: 0;
     background-color: rgba(0, 0, 0, 0.85);
     overflow: hidden;
+    transition: width 0.3s ease; /* Smooth transition for width only */
     display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
+    transform: translateX(-50%); /* Center horizontally */
+    left: 50%; /* Set left to 50% */
 }
 
 .overlay-content {
@@ -88,17 +90,18 @@ header img {
 }
 
 .overlay-content h2 {
-    font-size: 30px;
+    margin-bottom:30px;
+    font-size: 1.8em;
 }
 
 .overlay-content li a {
     text-decoration: none;
     padding: 8px;
     margin-top: 10px;
-    font-size: 20px;
-    color: #999999;
+    font-size: 1.5em;
+    color: #ddd;
     display: block;
-    transition: 0.3s;
+    transition: 0.8s;
 }
 
 .overlay-content li a:hover {
@@ -124,7 +127,6 @@ header img {
         right: 35px;
     }
 }
-
 
 main {
     color: #ddd; /* Light gray text */
