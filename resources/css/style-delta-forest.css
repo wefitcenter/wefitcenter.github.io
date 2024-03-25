@@ -8,10 +8,13 @@
 body {
     font-family: "Open Sans", sans-serif;
     font-weight: normal;
-    background: url("../resources/images/darkCamo.jpg") repeat; /* Camouflage background */
+    background: url("../images/darkCamo.jpg") repeat; /* Camouflage background */
     color: #fff; /* White text */
     margin: 0;
     padding: 0px 20% 40px 20%; /* Adjusted padding for better responsiveness */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -39,11 +42,11 @@ header img {
 
 .military-menu ul {
     list-style-type: none;
-    padding: px 0px;
+    padding: 0px 0px;
 }
 
 .military-menu ul li {
-    margin: 3px 0px; /* Adjusted margin for better spacing */
+    margin: 0px 0px 10px 0px; /* Adjusted margin for better spacing */
 }
 
 .military-menu ul li a {
@@ -52,18 +55,70 @@ header img {
     background-color: rgba(0, 0, 0, 0.3);
     text-decoration: none;
     color: #fff;
-    padding: 5px 5%;
+    padding: 8px 5%;
     border-radius: 2px;
-    border: 1px solid #ddd;
+    border: 2px solid #50484e;
     transition: all 0.3s ease;
     display: inline-block;
     width: 100%;
 }
 
 .military-menu ul li a:hover {
-    background-color: #555;
-    border-color: #fff;
+    background-color: rgba(0, 0, 0, 0.67); /* Semi-transparent black background */
+    border-color: #d9d9d9;
 }
+/* Styles for the overlay menu */
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.overlay-content {
+    position: relative;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.overlay-content li a {
+    text-decoration: none;
+    padding: 8px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #999999;
+    display: block;
+    transition: 0.3s;
+    font-size: 2.2em;
+}
+
+.overlay-content li a:hover {
+    color: #FFD700;
+}
+
+.overlay a.closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    cursor: pointer;
+    color: white;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a.closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
 
 main {
     color: #ddd; /* Light gray text */
@@ -74,7 +129,7 @@ section {
     background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black background */
     padding: 20px;
     border-radius: 2px;
-    border: 2px solid #333; /* Dark gray border */
+    border: 2px solid #50484e; /* Dark gray border */
     color: #fff; /* White text within sections */
 }
 
@@ -119,17 +174,6 @@ section ul {
     color: #FFD700; /* Orange for time */
 }
 
-/* Two-column layout for specific sections */
-.two-col-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.two-col-container section {
-    width: 100%; /* Full width on smaller screens */
-    margin-bottom: 20px;
-}
 
 .exercise-icon {
     width: 20px;
@@ -191,14 +235,20 @@ button {
     width: 100%; 
     padding: 10px; 
     margin-bottom: 10px; 
-    background-color: rgba(85, 70, 47, 0.8); /* Semi-transparent green background */
+    background-color: rgba(0, 0, 0, 0.3);
     font-size: 1.3rem; 
-    border: 1px solid #ddd;
+    border: 2px solid #50484e;
     border-radius: 2px; 
-    color: white; 
-    font-weight: bold; 
+    color: #fff; 
+    font-weight: 600; 
     transition: scale 0.3s ease-in-out; 
+    cursor: pointer;
 } 
+button:hover { 
+    background-color: rgba(0, 0, 0, 0.67); /* Semi-transparent black background */
+    border-color: #d9d9d9;
+}
+
 
 #editSection { 
     width: 100%; 
@@ -226,9 +276,6 @@ button {
     background-color: #ef4444; 
 } 
 
-#submit:hover, #updateEntry:hover, #cancelEdit:hover { 
-    scale: 1.02; 
-} 
 
 .hidden { 
     display: none !important; 
@@ -351,3 +398,12 @@ tbody > tr:hover {
     }
     
 }
+
+
+footer {
+    color: #fff;
+    padding-top:100px;
+    padding-bottom: 0px;
+    text-align: center;
+    width: 100%;
+  }

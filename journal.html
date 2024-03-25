@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Journal</title> 
-	<link rel="stylesheet" href="style-delta-forest.css"> 
+	<link rel="stylesheet" href="../wefitcenter.github.io/resources/css/style-delta-forest.css"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -18,18 +18,34 @@
 
 <body> 
     <header>
-        <img src="../resources/images/deltalogo.png" alt="Delta Force Logo">
+        <img src="../wefitcenter.github.io/resources/images/Deltaforestlogo.png" alt="Delta Forest Logo">
       </header>
     
       <nav class="military-menu">
+        <!-- Button to open the overlay navigation -->
         <ul>
-          <li><a href="overview.html">Overview</a></li>
-          <li><a href="journal.html">Journal</a></li>
+            <li><a href="overview.html">Overview</a></li>
+            <!-- Button to toggle the overlay menu -->
+            <li><a href="javascript:void(0)" onclick="openNav()">Missions</a></li>
+            <li><a href="journal.html">Journal</a></li>
             <li><a href="#">History</a></li>
-            <li><a href="#">Missions</a></li>
-            <li><a href="#">Profile</a></li>
-          </ul>
-        </nav>
+            <li><button id="logoutBtn">Logout</button></li>
+        </ul>
+    </nav>
+    
+    <!-- The overlay menu -->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <h2>CHOOSE YOUR OBJECTIVE</h2>
+            <li>Northern Vigilance</li>
+            <li>Baltic Storm</li>
+            <li>Aurora Borealis</li>
+            <li>Nordic Thunder</li>
+            <li>Arctic Shadow</li>
+            
+        </div>
+    </div>
         <div class="app"> 
             <h2>Journal</h2> 
             <div class="inputs"> 
@@ -99,6 +115,7 @@
                 <tbody id="output"> 
                 </tbody> 
             </table> 
+            
         </div>
         
 	<!-- Font Awesome JS CDN -->
@@ -109,6 +126,24 @@
 			crossorigin="anonymous" referrerpolicy="no-referrer"> 
 	</script> 
 	<script src="../wefitcenter.github.io/script.js"></script> 
-</body> 
+    <script src="login-logout.js"></script>
+    
+    <script>
+        // Function to open the overlay menu
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+    
+        // Function to close the overlay menu
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0";
+        }
+    </script>
+
+    <footer>
+        &copy; 2024 Delta Forest Training. All rights reserved.
+      </footer>
+</body>
+ 
 
 </html>
