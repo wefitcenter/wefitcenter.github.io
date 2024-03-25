@@ -212,7 +212,7 @@ label {
     font-size: 1.2rem; 
 } 
 
-input, select { 
+input, select, #exercise, #status { 
     display: block; /* Display inputs and labels as block */
     width: 100%; /* Take full width */
     margin-top: 8px; 
