@@ -212,7 +212,7 @@ label {
     font-size: 1.2rem; 
 } 
 
-input, select, #exercise, #status { 
+input, select{ 
     display: block; /* Display inputs and labels as block */
     width: 100%; /* Take full width */
     margin-top: 8px; 
@@ -385,6 +385,16 @@ tbody > tr:hover {
 
     input, select, label {
         font-size: 14px; /* Adjust font size for better readability on mobile */
+        display: block; /* Display inputs and labels as block */
+        width: 100%; /* Take full width */
+        margin-top: 8px; 
+        margin-bottom: 5px; 
+        padding: 10px; 
+        font-size: large; 
+        background-color: rgba(85, 70, 47, 0.8); /* Semi-transparent green background */
+        color: white; 
+        border: 1px solid #ddd;
+        border-radius: 2px; 
     }
 
     button {
