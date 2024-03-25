@@ -383,6 +383,10 @@ tbody > tr:hover {
         gap: 10px; /* Decrease gap between inputs */
     }
 
+    input, select, label {
+        font-size: medium; /* Adjust font size for better readability on mobile */
+    }
+
     button {
         font-size: 1rem; /* Decrease font size for better fit on mobile */
     }
@@ -395,6 +399,8 @@ tbody > tr:hover {
     }
     
 }
+
+
 footer {
     color: #fff;
     padding-top:100px;
