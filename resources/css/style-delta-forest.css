@@ -247,7 +247,10 @@ button {
     font-weight: 600; 
     transition: scale 0.3s ease-in-out; 
     cursor: pointer;
-} 
+}
+#submit {
+    margin: 15px 0px;
+}
 button:hover { 
     background-color: rgba(0, 0, 0, 0.67); /* Semi-transparent black background */
     border-color: #d9d9d9;
@@ -383,8 +386,11 @@ tbody > tr:hover {
         gap: 10px; /* Decrease gap between inputs */
     }
 
-    input, select, label {
+    input, label {
         font-size: 14px; /* Adjust font size for better readability on mobile */
+        
+    }
+    select {
         display: block; /* Display inputs and labels as block */
         width: 100%; /* Take full width */
         margin-top: 8px; 
