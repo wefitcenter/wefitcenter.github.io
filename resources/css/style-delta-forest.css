@@ -87,6 +87,9 @@ header img {
     margin-top: 10%;
     list-style: none;
 }
+.overlay-content h2{
+    font-size: 30px;
+}
 
 .overlay-content li a {
     text-decoration: none;
