@@ -384,7 +384,7 @@ tbody > tr:hover {
     }
 
     input, select, label {
-        font-size: medium; /* Adjust font size for better readability on mobile */
+        font-size: 14px; /* Adjust font size for better readability on mobile */
     }
 
     button {
