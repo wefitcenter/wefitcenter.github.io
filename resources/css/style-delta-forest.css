@@ -347,10 +347,7 @@ tbody > tr:hover {
 @media (max-width: 768px) {
     body {
         padding: 0px 10px 40px 10px; /* Adjusted padding for better mobile layout */
-        font-size: 12px; /* Decrease font size for smaller screens */
-        line-height: 1.6;
-        letter-spacing: 0.2px;
-        word-spacing: 0.1px;
+        font-size: 14px; /* Decrease font size for smaller screens */
     }
 
     header img {
