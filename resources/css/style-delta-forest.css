@@ -59,16 +59,25 @@ header img {
     margin: 0;
     padding: 0;
 }
+
 /* Logout-knappen styling */
 #logoutBtn {
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    border: 2px solid transparent;
-    border-radius: 4px;
-    transition: background-color 0.3s, border-color 0.3s;
-    cursor: pointer;
+    background-color: transparent; /* Samma bakgrund som länkar */
+    color: white; /* Samma färg som länkar */
+    text-decoration: none; /* Ta bort understrykning */
+    padding: 10px 15px; /* Matchar länkar */
+    border: 2px solid transparent; /* Ingen initial kant */
+    border-radius: 4px; /* Rundade hörn */
+    font-family: "Exo 2", sans-serif; /* Samma typsnitt */
+    font-weight: bold; /* Matchar textens stil */
+    transition: background-color 0.3s, border-color 0.3s; /* Mjuk övergång */
+    cursor: pointer; /* För interaktivitet */
+}
+
+/* Hover-effekt för Logout-knappen */
+#logoutBtn:hover {
+    background-color: var(--dark-sand-brown); /* Sandbrun hover */
+    border-color: var(--olive-drab); /* Olive Drab kant */
 }
 
 .military-menu ul li {
@@ -85,10 +94,6 @@ header img {
 }
 
 .military-menu ul li a:hover {
-    background-color: var(--dark-sand-brown);
-    border-color: var(--olive-drab);
-}
-#logoutBtn:hover {
     background-color: var(--dark-sand-brown);
     border-color: var(--olive-drab);
 }
