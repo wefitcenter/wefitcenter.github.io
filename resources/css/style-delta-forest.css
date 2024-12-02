@@ -412,29 +412,51 @@ tbody > tr:hover {
         height: auto; /* Maintain aspect ratio */
     }
 
-       .menu-toggle {
+    .military-menu {
+        position: fixed; /* Gör menyn fast */
+        bottom: 0; /* Placera längst ner */
+        width: 100%; /* Full bredd */
+        padding: 10px 0;
+        background-color: var(--dark-green);
+        border-top: 2px solid var(--olive-drab); /* Avgränsa från innehållet */
         display: flex;
-    }
-
- .military-menu {
-        flex-direction: column;
-        align-items: flex-start; /* Centrera menyn på små skärmar */
-        padding: 15px;
+        justify-content: space-around; /* Jämnt avstånd mellan ikoner */
+        align-items: center; /* Centrerar ikoner vertikalt */
+        box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2); /* Subtil skugga för effekt */
+        z-index: 1000; /* Håll menyn ovanpå annat innehåll */
     }
 
     .military-menu ul {
-        flex-direction: column;
+        display: flex; /* Gör att menyn är horisontell */
+        gap: 0; /* Ingen extra marginal */
+        padding: 0;
+        margin: 0;
         width: 100%;
+        justify-content: space-evenly; /* Lika stort utrymme mellan ikoner */
     }
 
     .military-menu ul li {
-        width: 100%;
+        list-style: none;
+        margin: 0;
     }
 
-    .military-menu ul li a,
-    #logoutBtn {
-        width: 100%; /* Fyll hela bredden på små skärmar */
-        text-align: left;
+    .military-menu ul li a, #logoutBtn {
+        display: flex; /* Flexbox för att centrera ikoner */
+        flex-direction: column; /* Vertikal layout för ikon och eventuell text */
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 20px; /* Justera storlek för ikoner */
+        border: none; /* Ingen kant */
+        cursor: pointer;
+        transition: color 0.3s, transform 0.2s;
+    }
+
+    .military-menu ul li a:hover, #logoutBtn:hover {
+        color: var(--dark-sand-brown); /* Färgändring vid hover */
+        transform: scale(1.1); /* Lätt förstoring */
     }
     section ul {
         padding: 0px 0px 30px 0px;
