@@ -41,21 +41,22 @@ header img {
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; /* Justerar allt i mitten vertikalt */
     font-family: "Exo 2", sans-serif;
     font-weight: bold;
     position: sticky;
     top: 0;
     z-index: 1000;
     border-bottom: 2px solid var(--olive-drab);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Lägger till en subtil skugga för bättre kontrast */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Stilar för länkar och knappar */
+/* Stilar för ul och li */
 .military-menu ul {
     list-style: none;
     display: flex;
-    gap: 15px; /* Ökar mellanrum mellan element */
+    align-items: center; /* Justerar alla element vertikalt */
+    gap: 15px; /* Avstånd mellan elementen */
     margin: 0;
     padding: 0;
 }
@@ -64,10 +65,12 @@ header img {
     margin: 0;
 }
 
-/* Gemensamma stilar för länkar och logout-knapp */
+/* Stilar för länkar och knappar */
 .military-menu ul li a,
 #logoutBtn {
-    display: inline-block;
+    display: inline-flex; /* Säkerställer flexibel centrering */
+    align-items: center; /* Vertikalt centrerat innehåll */
+    justify-content: center; /* Horisontellt centrerat */
     color: white;
     text-decoration: none;
     padding: 10px 15px;
@@ -76,34 +79,36 @@ header img {
     font-family: "Exo 2", sans-serif;
     font-weight: bold;
     font-size: 16px;
-    line-height: 1.5; /* Ger bättre vertikal alignment */
-    transition: background-color 0.3s, border-color 0.3s, transform 0.2s; /* Lägger till en skaleffekt */
+    line-height: 1; /* Matchar vertikal inriktning */
+    transition: background-color 0.3s, border-color 0.3s, transform 0.2s;
     cursor: pointer;
-    text-align: center;
+    background-color: transparent; /* Gör dem konsekventa */
 }
 
-/* Hover-effekter */
+/* Hover-effekt */
 .military-menu ul li a:hover,
 #logoutBtn:hover {
     background-color: var(--dark-sand-brown);
     border-color: var(--olive-drab);
-    transform: scale(1.05); /* Ger en subtil skaleffekt vid hover */
+    transform: scale(1.05);
 }
 
-/* Logout-knapp */
+/* Rensa standardstilar för knappen */
 #logoutBtn {
-    all: unset; /* Tar bort standardstilar */
+    all: unset; /* Rensa alla webbläsarstandarder */
     padding: 10px 15px;
-    border: 2px solid transparent;
     border-radius: 4px;
-    text-align: center;
     cursor: pointer;
-    font-size: 16px;
+    text-align: center;
+    display: inline-flex; /* Matchar länkarna */
+    align-items: center;
+    justify-content: center;
+    font-family: "Exo 2", sans-serif;
     font-weight: bold;
-    background-color: transparent;
+    font-size: 16px;
+    line-height: 1;
     transition: background-color 0.3s, border-color 0.3s, transform 0.2s;
 }
-
 
 
 /* Styles for the overlay menu */
