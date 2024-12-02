@@ -35,6 +35,21 @@ header img {
     height: auto; /* Maintain aspect ratio */
 }
 
+.military-menu {
+    background-color: var(--dark-green);
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Exo 2", sans-serif;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid var(--olive-drab);
+}
+
 /* Rensa standardstilar för button */
 #logoutBtn {
     all: unset; /* Tar bort alla inbyggda standardstilar */
