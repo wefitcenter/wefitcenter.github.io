@@ -35,42 +35,19 @@ header img {
     height: auto; /* Maintain aspect ratio */
 }
 
-/* Menybas */
-.military-menu {
-    background-color: var(--dark-green);
-    color: white;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: "Exo 2", sans-serif;
-    font-weight: bold;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    border-bottom: 2px solid var(--olive-drab);
-}
-
-/* Lista och länkar */
-.military-menu ul {
-    list-style-type: none;
-    display: flex;
-    gap: 15px;
-    margin: 0;
-    padding: 0;
-}
-
 /* Rensa standardstilar för button */
 #logoutBtn {
-    all: unset; /* Tar bort alla inbyggda stilar */
-    display: inline-block; /* Gör den som en inline-block som länkar */
-    background-color: transparent; /* Samma bakgrund som länkar */
+    all: unset; /* Tar bort alla inbyggda standardstilar */
+    display: inline-block; /* Samma display-typ som länkar */
+    background-color: transparent; /* Ingen bakgrund */
     color: white; /* Samma färg som länkar */
-    padding: 10px 15px; /* Matchar länkar */
+    padding: 10px 15px; /* Exakt samma padding som länkar */
     border: 2px solid transparent; /* Ingen initial kant */
     border-radius: 4px; /* Rundade hörn */
     font-family: "Exo 2", sans-serif; /* Samma typsnitt */
     font-weight: bold; /* Matchar textens stil */
+    font-size: 16px; /* Säkerställer samma textstorlek */
+    line-height: 1; /* Matchar länkens line-height */
     transition: background-color 0.3s, border-color 0.3s; /* Mjuk övergång */
     cursor: pointer; /* För interaktivitet */
     text-align: center; /* Centrera text */
@@ -82,9 +59,9 @@ header img {
     border-color: var(--olive-drab); /* Olive Drab kant */
 }
 
-
+/* Lista och länkar */
 .military-menu ul li {
-    margin: 0;
+    margin: 0; /* Ingen extra marginal */
 }
 
 .military-menu ul li a {
@@ -94,12 +71,14 @@ header img {
     border: 2px solid transparent;
     border-radius: 4px;
     transition: background-color 0.3s, border-color 0.3s;
+    display: inline-block; /* Säkerställer samma beteende som knappen */
 }
 
 .military-menu ul li a:hover {
     background-color: var(--dark-sand-brown);
     border-color: var(--olive-drab);
 }
+
 
 
 /* Styles for the overlay menu */
