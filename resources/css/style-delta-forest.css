@@ -48,50 +48,60 @@ header img {
     top: 0;
     z-index: 1000;
     border-bottom: 2px solid var(--olive-drab);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Lägger till en subtil skugga för bättre kontrast */
 }
 
-/* Rensa standardstilar för button */
-#logoutBtn {
-    all: unset; /* Tar bort alla inbyggda standardstilar */
-    display: inline-block; /* Samma display-typ som länkar */
-    background-color: transparent; /* Ingen bakgrund */
-    color: white; /* Samma färg som länkar */
-    padding: 10px 15px; /* Exakt samma padding som länkar */
-    border: 2px solid transparent; /* Ingen initial kant */
-    border-radius: 4px; /* Rundade hörn */
-    font-family: "Exo 2", sans-serif; /* Samma typsnitt */
-    font-weight: bold; /* Matchar textens stil */
-    font-size: 16px; /* Säkerställer samma textstorlek */
-    line-height: 1; /* Matchar länkens line-height */
-    transition: background-color 0.3s, border-color 0.3s; /* Mjuk övergång */
-    cursor: pointer; /* För interaktivitet */
-    text-align: center; /* Centrera text */
+/* Stilar för länkar och knappar */
+.military-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 15px; /* Ökar mellanrum mellan element */
+    margin: 0;
+    padding: 0;
 }
 
-/* Hover-effekt för Logout-knappen */
-#logoutBtn:hover {
-    background-color: var(--dark-sand-brown); /* Sandbrun hover */
-    border-color: var(--olive-drab); /* Olive Drab kant */
-}
-
-/* Lista och länkar */
 .military-menu ul li {
-    margin: 0; /* Ingen extra marginal */
+    margin: 0;
 }
 
-.military-menu ul li a {
+/* Gemensamma stilar för länkar och logout-knapp */
+.military-menu ul li a,
+#logoutBtn {
+    display: inline-block;
     color: white;
     text-decoration: none;
     padding: 10px 15px;
     border: 2px solid transparent;
     border-radius: 4px;
-    transition: background-color 0.3s, border-color 0.3s;
-    display: inline-block; /* Säkerställer samma beteende som knappen */
+    font-family: "Exo 2", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.5; /* Ger bättre vertikal alignment */
+    transition: background-color 0.3s, border-color 0.3s, transform 0.2s; /* Lägger till en skaleffekt */
+    cursor: pointer;
+    text-align: center;
 }
 
-.military-menu ul li a:hover {
+/* Hover-effekter */
+.military-menu ul li a:hover,
+#logoutBtn:hover {
     background-color: var(--dark-sand-brown);
     border-color: var(--olive-drab);
+    transform: scale(1.05); /* Ger en subtil skaleffekt vid hover */
+}
+
+/* Logout-knapp */
+#logoutBtn {
+    all: unset; /* Tar bort standardstilar */
+    padding: 10px 15px;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: transparent;
+    transition: background-color 0.3s, border-color 0.3s, transform 0.2s;
 }
 
 
