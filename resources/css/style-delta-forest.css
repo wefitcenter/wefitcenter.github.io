@@ -59,12 +59,23 @@ header img {
     margin: 0;
     padding: 0;
 }
+/* Logout-knappen styling */
+#logoutBtn {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    transition: background-color 0.3s, border-color 0.3s;
+    cursor: pointer;
+}
 
-.military-menu ul li, #logoutBtn {
+.military-menu ul li {
     margin: 0;
 }
 
-.military-menu ul li a, #logoutBtn {
+.military-menu ul li a {
     color: white;
     text-decoration: none;
     padding: 10px 15px;
@@ -77,18 +88,9 @@ header img {
     background-color: var(--dark-sand-brown);
     border-color: var(--olive-drab);
 }
-#logoutBtn button ul li a:hover {
+#logoutBtn:hover {
     background-color: var(--dark-sand-brown);
     border-color: var(--olive-drab);
-}
-
-#logoutBtn button ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    border: 2px solid transparent;
-    border-radius: 4px;
-    transition: background-color 0.3s, border-color 0.3s;
 }
 
 
