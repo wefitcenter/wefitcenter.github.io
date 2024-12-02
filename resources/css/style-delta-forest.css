@@ -95,7 +95,6 @@ header img {
 
 /* Rensa standardstilar för knappen */
 #logoutBtn {
-    all: unset; /* Rensa alla webbläsarstandarder */
     padding: 10px 15px;
     border-radius: 4px;
     cursor: pointer;
