@@ -402,7 +402,7 @@ tbody > tr:hover {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     body {
-        padding: 0px 10px 40px 10px; /* Adjusted padding for better mobile layout */
+        padding: 60px; /* Adjusted padding for better mobile layout */
         font-size: 14px; /* Decrease font size for smaller screens */
     }
 
@@ -445,7 +445,7 @@ tbody > tr:hover {
 
     .military-menu ul li a {
         color: white; /* Ikonfärg */
-        font-size: 24px; /* Ikonstorlek */
+        font-size: 16px; /* Ikonstorlek */
         display: flex;
         flex-direction: column; /* Ikon över eventuell text */
         align-items: center;
