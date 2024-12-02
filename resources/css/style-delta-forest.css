@@ -60,11 +60,11 @@ header img {
     padding: 0;
 }
 
-.military-menu ul li {
+.military-menu ul li, #logoutBtn {
     margin: 0;
 }
 
-.military-menu ul li a {
+.military-menu ul li a, #logoutBtn {
     color: white;
     text-decoration: none;
     padding: 10px 15px;
@@ -77,12 +77,12 @@ header img {
     background-color: var(--dark-sand-brown);
     border-color: var(--olive-drab);
 }
-#logoutBtn ul li a:hover {
+#logoutBtn button ul li a:hover {
     background-color: var(--dark-sand-brown);
     border-color: var(--olive-drab);
 }
 
-#logoutBtn ul li a {
+#logoutBtn button ul li a {
     color: white;
     text-decoration: none;
     padding: 10px 15px;
