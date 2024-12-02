@@ -410,7 +410,7 @@ tbody > tr:hover {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     body {
-        padding: 60px; /* Adjusted padding for better mobile layout */
+        padding: 10px 40px 10px 40px; /* Adjusted padding for better mobile layout */
         font-size: 14px; /* Decrease font size for smaller screens */
     }
 
@@ -441,7 +441,7 @@ tbody > tr:hover {
 
     .mobile-menu a {
         color: white; /* Text-/ikonfärg */
-        font-size: 20px; /* Ikonstorlek */
+        font-size: 16px; /* Ikonstorlek */
         display: flex; /* Flexibel layout */
         flex-direction: column; /* Vertikal layout för ikon och text */
         align-items: center; /* Centrera innehåll */
