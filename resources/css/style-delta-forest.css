@@ -4,6 +4,11 @@
     margin: 0;
     padding: 0;
 }
+:root {
+    --dark-green: #013220; /* Mörkgrön */
+    --olive-drab: #556B2F; /* Olive Drab */
+    --dark-sand-brown: #A38E5D; /* Mörk Sandbrun */
+}
 
 body {
     font-family: "Open Sans", sans-serif;
