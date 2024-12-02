@@ -72,6 +72,21 @@ header img {
     background-color: var(--dark-sand-brown);
     border-color: var(--olive-drab);
 }
+#logoutBtn ul li a:hover {
+    background-color: var(--dark-sand-brown);
+    border-color: var(--olive-drab);
+}
+
+#logoutBtn ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+
 /* Styles for the overlay menu */
 .overlay {
     height: 100%;
