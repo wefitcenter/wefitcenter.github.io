@@ -420,7 +420,7 @@ tbody > tr:hover {
         height: auto; /* Maintain aspect ratio */
     }
 
-.desktop-menu {
+.military-menu {
         display: none; /* Dölj den ursprungliga menyn */
     }
 
