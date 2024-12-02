@@ -68,7 +68,6 @@ header img {
 /* Stilar för länkar och knappar */
 .military-menu ul li a,
 #logoutBtn {
-    all: unset; /* Rensa alla webbläsarstandarder */
     display: inline-flex; /* Säkerställer flexibel centrering */
     align-items: center; /* Vertikalt centrerat innehåll */
     justify-content: center; /* Horisontellt centrerat */
