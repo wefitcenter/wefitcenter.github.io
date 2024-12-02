@@ -23,7 +23,7 @@ body {
 }
 
 header {
-    background-color: var(--olive-drab);
+    background-color: transparent;
     color: var(--dark-sand-brown);
     padding: 0px;
     margin:0;
@@ -60,11 +60,12 @@ header img {
     padding: 0;
 }
 
-/* Logout-knappen styling */
+/* Rensa standardstilar för button */
 #logoutBtn {
+    all: unset; /* Tar bort alla inbyggda stilar */
+    display: inline-block; /* Gör den som en inline-block som länkar */
     background-color: transparent; /* Samma bakgrund som länkar */
     color: white; /* Samma färg som länkar */
-    text-decoration: none; /* Ta bort understrykning */
     padding: 10px 15px; /* Matchar länkar */
     border: 2px solid transparent; /* Ingen initial kant */
     border-radius: 4px; /* Rundade hörn */
@@ -72,6 +73,7 @@ header img {
     font-weight: bold; /* Matchar textens stil */
     transition: background-color 0.3s, border-color 0.3s; /* Mjuk övergång */
     cursor: pointer; /* För interaktivitet */
+    text-align: center; /* Centrera text */
 }
 
 /* Hover-effekt för Logout-knappen */
@@ -79,6 +81,7 @@ header img {
     background-color: var(--dark-sand-brown); /* Sandbrun hover */
     border-color: var(--olive-drab); /* Olive Drab kant */
 }
+
 
 .military-menu ul li {
     margin: 0;
