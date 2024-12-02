@@ -399,6 +399,14 @@ tbody > tr:hover {
     } 
 } 
 
+
+/* Standardmenyn (dold på mobilen) */
+@media (min-width: 769px) {
+    .mobile-menu {
+        display: none; /* Dölj mobilmenyn på större skärmar */
+    }
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     body {
@@ -412,51 +420,40 @@ tbody > tr:hover {
         height: auto; /* Maintain aspect ratio */
     }
 
-   .military-menu {
+.desktop-menu {
+        display: none; /* Dölj den ursprungliga menyn */
+    }
+
+    .mobile-menu {
+        display: flex; /* Visa den nya mobilmenyn */
         position: fixed; /* Fäst längst ner */
-        bottom: 0; /* Placera vid skärmens botten */
-        left: 0; /* Full bredd */
-        width: 100%; /* Täck hela bredden */
-        height: 50px; /* Höjd för menyn */
+        bottom: 0;
+        left: 0;
+        width: 100%; /* Full bredd */
+        height: 60px; /* Höjd för mobilmenyn */
         background-color: var(--dark-green); /* Mörkgrön bakgrund */
-        border-top: 2px solid var(--olive-drab); /* Diskret kant ovanför */
-        display: flex;
-        justify-content: space-evenly; /* Lika avstånd mellan ikoner */
-        align-items: center; /* Centrerar ikonerna vertikalt */
-        box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.3); /* Subtil skugga */
-        z-index: 1000; /* Placera menyn ovanpå annat innehåll */
-    }
-
-    .military-menu ul {
-        display: flex;
-        justify-content: space-evenly; /* Jämnt utrymme mellan objekten */
+        border-top: 2px solid var(--olive-drab); /* Diskret kant */
+        justify-content: space-evenly; /* Jämnt utrymme mellan ikoner */
         align-items: center; /* Vertikal centrering */
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        list-style: none; /* Ingen punktlista */
+        z-index: 1000; /* Placera ovanför annat innehåll */
+        box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.3); /* Subtil skugga */
     }
 
-    .military-menu ul li {
-        margin: 0;
-        flex: 1; /* Lika bredd för alla objekt */
-        text-align: center; /* Centrera innehåll */
-    }
-
-    .military-menu ul li a {
-        color: white; /* Ikonfärg */
-        font-size: 16px; /* Ikonstorlek */
-        display: flex;
-        flex-direction: column; /* Ikon över eventuell text */
-        align-items: center;
+    .mobile-menu a {
+        color: white; /* Text-/ikonfärg */
+        font-size: 20px; /* Ikonstorlek */
+        display: flex; /* Flexibel layout */
+        flex-direction: column; /* Vertikal layout för ikon och text */
+        align-items: center; /* Centrera innehåll */
         justify-content: center;
         text-decoration: none; /* Ingen understrykning */
+        cursor: pointer;
         transition: transform 0.2s, color 0.3s;
     }
 
-    .military-menu ul li a:hover {
-        color: var(--dark-sand-brown); /* Sandbrun vid hover */
-        transform: scale(1.2); /* Förstora något vid hover */
+    .mobile-menu a:hover {
+        color: var(--dark-sand-brown); /* Hoverfärg */
+        transform: scale(1.1); /* Lätt förstoring vid hover */
     }
 
     #logoutBtn {
