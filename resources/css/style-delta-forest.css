@@ -36,6 +36,7 @@ header img {
 }
 
 .military-menu {
+    all: unset;
     background-color: var(--dark-green);
     color: white;
     padding: 10px 20px;
@@ -68,6 +69,7 @@ header img {
 /* Stilar för länkar och knappar */
 .military-menu ul li a,
 #logoutBtn {
+    all: unset;
     display: inline-flex; /* Säkerställer flexibel centrering */
     align-items: center; /* Vertikalt centrerat innehåll */
     justify-content: center; /* Horisontellt centrerat */
