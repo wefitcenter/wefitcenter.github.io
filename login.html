@@ -21,23 +21,23 @@
         <img src="./resources/images/Deltaforestlogo.png" alt="Delta Forest Logo">
       </header>
     
-        <div class="container">
-            <h2>Login</h2>
-            <form id="loginForm">
-              <div class="form-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" required>
-              </div>
-              <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
-              </div>
-              <button type="submit">Login</button>
-            </form>
-            <p id="message"></p>
-          </div>
-           <!-- Include your JavaScript file -->
-    <script src="../wefitcenter.github.io/login-logout.js"></script>
+      <div id="auth-container">
+        <h1>Logga in</h1>
+        <form id="login-form">
+          <input type="email" id="email" placeholder="E-post" required>
+          <input type="password" id="password" placeholder="Lösenord" required>
+          <button type="submit">Logga in</button>
+        </form>
+        <p>Har du inget konto? <a id="register-link" href="#">Registrera dig</a></p>
+        <form id="register-form" style="display: none;">
+          <input type="email" id="reg-email" placeholder="E-post" required>
+          <input type="password" id="reg-password" placeholder="Lösenord" required>
+          <button type="submit">Registrera</button>
+        </form>
+      </div>
+      <script src="firebase-config.js"></script>
+      <script src="auth.js"></script>
+    </body>
 
     <footer>
         &copy; 2024 Delta Forest Training. All rights reserved.

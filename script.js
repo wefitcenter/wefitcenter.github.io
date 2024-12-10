@@ -132,4 +132,47 @@ submitButton.addEventListener("click", ()=>{
     fillTable() 
     addToLocalStorage() 
 })
+import { database } from "./firebase-config.js";
+import { ref, set, get, update } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-database.js";
+import { auth } from "./firebase-config.js";
+
+const soldierForm = document.getElementById("soldier-form");
+const soldierNameInput = document.getElementById("soldier-name");
+const createSoldierBtn = document.getElementById("create-soldier-btn");
+const soldierProfile = document.getElementById("soldier-profile");
+
+createSoldierBtn.addEventListener("click", async () => {
+  const user = auth.currentUser;
+  if (!user) return;
+
+  const soldierName = soldierNameInput.value;
+  const userRef = ref(database, `users/${user.uid}/soldier`);
+
+  await set(userRef, {
+    name: soldierName,
+    exp: 0,
+    level: 1,
+  });
+
+  loadSoldierProfile();
+});
+
+async function loadSoldierProfile() {
+  const user = auth.currentUser;
+  if (!user) return;
+
+  const userRef = ref(database, `users/${user.uid}/soldier`);
+  const snapshot = await get(userRef);
+
+  if (snapshot.exists()) {
+    const soldierData = snapshot.val();
+    soldierProfile.style.display = "block";
+    document.getElementById("soldier-name-display").textContent = soldierData.name;
+    document.getElementById("exp-display").textContent = soldierData.exp;
+    document.getElementById("level-display").textContent = soldierData.level;
+    soldierForm.style.display = "none";
+  }
+}
+
+loadSoldierProfile();
 

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Din Soldat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="profile-container">
+    <h1>Välkommen, <span id="user-email"></span></h1>
+    <div id="soldier-form">
+      <h2>Skapa din soldat</h2>
+      <input type="text" id="soldier-name" placeholder="Soldatens namn" required>
+      <button id="create-soldier-btn">Skapa Soldat</button>
+    </div>
+    <div id="soldier-profile" style="display: none;">
+      <h2>Din Soldat</h2>
+      <p>Namn: <span id="soldier-name-display"></span></p>
+      <p>EXP: <span id="exp-display">0</span></p>
+      <p>Level: <span id="level-display">1</span></p>
+    </div>
+    <button id="logout-btn">Logga ut</button>
+  </div>
+  <script src="firebase-config.js"></script>
+  <script src="auth.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
