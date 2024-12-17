@@ -1,18 +1,21 @@
-<!DOCTYPE html> <!-- Anger att dokumentet är HTML5 -->
-<html lang="en"> <!-- Språkdefinition för SEO och skärmläsare -->
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8"> <!-- Stöd för specialtecken -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Gör sidan responsiv -->
-    <title>Lumorion Studios</title> <!-- Titel som visas i webbläsarens flik -->
-    <link rel="stylesheet" href="style1.css"> <!-- Länkar till CSS-filen -->
-    <script defer src="script1.js"></script> <!-- Länkar till JavaScript-filen, "defer" gör att den laddas sist -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumorion Studios</title>
+    <link rel="stylesheet" href="style1.css">
+    <script defer src="scriptmenu.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation Bar -->
+    <!-- Navigation -->
     <nav id="navbar">
-        <div class="logo">LUMORION</div> <!-- Logotypen -->
-        <ul> <!-- Navigationslänkar -->
+        <div class="logo">LUMORION STUDIOS</div>
+        <ul>
             <li><a href="#about">About</a></li>
+            <li><a href="#story">Our Story</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -20,43 +23,68 @@
 
     <!-- Header Section -->
     <header>
-        <div class="overlay"> <!-- Semi-transparent bakgrund -->
-            <h1>Welcome to Lumorion Studios</h1>
-            <p>Reflecting Infinite Worlds</p>
-            <a href="#projects" class="btn">Explore Projects</a> <!-- Knapp som länkar till projects -->
+        <div class="overlay">
+            <h1 class="fade-in">Welcome to <span>Lumorion Studios</span></h1>
+            <p class="fade-in">Where Light Reflects Infinite Worlds</p>
+            <a href="#projects" class="btn fade-in">Discover Our Work</a>
         </div>
     </header>
 
     <!-- About Section -->
-    <section id="about" class="content-section">
+    <section id="about" class="content-section reveal">
         <h2>About Us</h2>
-        <p>At Lumorion Studios, we craft experiences that bridge reality and imagination. From immersive games to innovative web projects, we reflect infinite possibilities.</p>
+        <p>
+            <strong>Lumorion Studios</strong> is a beacon for creativity and innovation.  
+            We merge cutting-edge technology, breathtaking design, and storytelling to create worlds that inspire, immerse, and transcend boundaries.
+        </p>
+    </section>
+
+    <!-- Story Section -->
+    <section id="story" class="content-section reveal">
+        <h2>Our Story</h2>
+        <p>
+            The concept of <strong>Lumorion</strong> was born from a desire to explore the unseen.  
+            A reflective mist that opens doors to infinite dimensions – each reflection a gateway, every world unique.  
+            At Lumorion Studios, we channel this energy to build experiences that inspire exploration and self-reflection.
+        </p>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="content-section">
+    <section id="projects" class="content-section reveal">
         <h2>Our Projects</h2>
-        <div class="projects-container"> <!-- En behållare för projektkort -->
+        <div class="projects-container">
             <div class="project">
-                <img src="project1.jpg" alt="Project 1"> <!-- Projektbild -->
-                <h3>Project 1</h3>
-                <p>An immersive game experience that challenges boundaries.</p>
+                <img src="project1.jpg" alt="Project 1">
+                <div class="project-info">
+                    <h3>Portal Horizon</h3>
+                    <p>Explore boundless dimensions through reflective portals in a game of discovery and wonder.</p>
+                </div>
             </div>
             <div class="project">
                 <img src="project2.jpg" alt="Project 2">
-                <h3>Project 2</h3>
-                <p>A cutting-edge web project showcasing our innovation.</p>
+                <div class="project-info">
+                    <h3>Reflections AR</h3>
+                    <p>An augmented reality experience merging light, reflection, and reality into one seamless journey.</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="project3.jpg" alt="Project 3">
+                <div class="project-info">
+                    <h3>World of Echoes</h3>
+                    <p>A narrative-driven experience where choices resonate across parallel worlds.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="content-section">
+    <section id="contact" class="content-section reveal">
         <h2>Contact Us</h2>
+        <p>We’re here to collaborate, create, and inspire. Reach out to us today!</p>
         <p>Email: <a href="mailto:info@lumorion.com">info@lumorion.com</a></p>
     </section>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Lumorion Studios | Reflecting Infinite Worlds</p>
     </footer>

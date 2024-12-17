@@ -1,79 +1,112 @@
 /* General Reset */
 * {
-    margin: 0; /* Tar bort marginaler */
-    padding: 0; /* Tar bort padding */
-    box-sizing: border-box; /* Inkluderar padding och border i elementets storlek */
-    font-family: 'Arial', sans-serif; /* Grundtypsnitt */
-    scroll-behavior: smooth; /* Gör scroll mjuk */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-/* Body - Grundstil för hela sidan */
 body {
-    background-color: #0d0d0d; /* Mörk bakgrundsfärg */
-    color: #f5f5f5; /* Ljus textfärg */
-    line-height: 1.6; /* Ökad läsbarhet */
+    font-family: 'Poppins', sans-serif;
+    background-color: #0d0d0d;
+    color: #f5f5f5;
+    line-height: 1.8;
 }
 
 /* Navigation */
 nav {
-    background-color: rgba(0, 0, 0, 0.8); /* Halvtransparent bakgrund */
-    color: #d4af37; /* Guldaktig färg för logotypen */
-    display: flex; /* Flexbox för layout */
-    justify-content: space-between; /* Sprider logotyp och länkar */
-    align-items: center;
-    padding: 10px 20px;
-    position: fixed; /* Fixerad högst upp */
-    top: 0;
+    position: fixed;
     width: 100%;
-    z-index: 1000; /* Ligger över andra element */
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+nav .logo {
+    color: #d4af37;
+    font-weight: 600;
+    font-size: 1.5rem;
 }
 
 nav ul {
-    list-style: none; /* Tar bort punktlistor */
+    list-style: none;
     display: flex;
 }
 
 nav ul li a {
-    color: #f5f5f5; /* Vit text */
-    text-decoration: none; /* Tar bort understrykning */
-    transition: color 0.3s; /* Smidig övergångseffekt */
+    color: #f5f5f5;
+    margin-left: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #d4af37; /* Guld färg vid hover */
+    color: #d4af37;
 }
 
-/* Header med bakgrundsbild */
+/* Header Section */
 header {
-    background: url('header-background.jpg') no-repeat center center/cover;
     height: 100vh;
+    background: url('header-background.jpg') no-repeat center center/cover;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     text-align: center;
-    position: relative;
 }
 
-header .overlay {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    color: #d4af37; /* Textfärg */
+header h1 {
+    font-size: 3rem;
+    color: #f5f5f5;
 }
 
-/* Projektsektionen */
+header h1 span {
+    color: #d4af37;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #d4af37;
+    color: #0d0d0d;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color: #b38e2f;
+    transform: translateY(-3px);
+}
+
+/* Content Sections */
+.content-section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* Projects */
 .projects-container {
-    display: flex; /* Flexbox för radlayout */
-    justify-content: center; /* Centrerar projekten */
-    gap: 20px; /* Avstånd mellan projektkort */
+    display: flex;
+    gap: 20px;
+    justify-content: center;
 }
 
 .project {
     background: #1e1e1e;
-    border-radius: 10px; /* Rundade hörn */
-    box-shadow: 0 0 10px rgba(255, 215, 0, 0.2); /* Ljus skugga */
-    transition: transform 0.3s; /* Hover-effekt */
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 
 .project:hover {
-    transform: scale(1.05); /* Förstorar kortet vid hover */
+    transform: scale(1.05);
 }

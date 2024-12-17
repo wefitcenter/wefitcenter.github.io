@@ -9,3 +9,23 @@ window.addEventListener('scroll', () => {
         navbar.style.boxShadow = 'none'; // Tar bort skugga
     }
 });
+
+// Scroll reveal effect
+document.addEventListener("DOMContentLoaded", () => {
+    const reveals = document.querySelectorAll(".reveal");
+
+    function checkScroll() {
+        reveals.forEach(reveal => {
+            const windowHeight = window.innerHeight;
+            const elementTop = reveal.getBoundingClientRect().top;
+            const revealPoint = 150;
+
+            if (elementTop < windowHeight - revealPoint) {
+                reveal.classList.add("active");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", checkScroll);
+    checkScroll();
+});
