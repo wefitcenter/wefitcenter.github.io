@@ -1,92 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lumorion Studios</title>
+    <title>Lumorion Studios - Din Kreativa Hubb</title>
+    <meta name="description" content="Lumorion Studios är din plats för inspiration, lärande och gemenskap inom game development och programmering.">
     <link rel="stylesheet" href="style1.css">
     <script defer src="scriptmenu.js"></script>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
+
     <!-- Navigation -->
-    <nav id="navbar">
-        <div class="logo">LUMORION STUDIOS</div>
+    <nav id="navbar" aria-label="Huvudmeny">
+        <div class="logo"><img src="resources/images/LS.png" alt="Lumorion Studios Logo" width="150"></div>
         <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#story">Our Story</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#inspiration">Inspiration</a></li>
+            <li><a href="#learning">Lärande</a></li>
+            <li><a href="#projects">Projekt</a></li>
+            <li><a href="#community">Gemenskap</a></li>
+            <li><a href="#blog">Blogg</a></li>
+            <li><a href="#contact">Kontakt</a></li>
         </ul>
+        <a href="#" class="mobile-menu-toggle" aria-label="Open Mobile Menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></a>
     </nav>
 
     <!-- Header Section -->
-    <header>
+    <header class="hero">
+        <video autoplay muted loop class="background-video">
+            <source src="background.mp4" type="video/mp4">
+            Din webbläsare stödjer inte video taggen.
+        </video>
         <div class="overlay">
-            <h1 class="fade-in">Welcome to <span>Lumorion Studios</span></h1>
-            <p class="fade-in">Where Light Reflects Infinite Worlds</p>
-            <a href="#projects" class="btn fade-in">Discover Our Work</a>
+            <h1 class="fade-in">Välkommen till <span>Lumorion Studios</span></h1>
+            <p class="fade-in">Där Din Kreativa Resa Börjar</p>
+            <a href="#learning" class="btn fade-in">Starta Din Upptäckt</a>
         </div>
     </header>
 
-    <!-- About Section -->
-    <section id="about" class="content-section reveal">
-        <h2>About Us</h2>
-        <p>
-            <strong>Lumorion Studios</strong> is a beacon for creativity and innovation.  
-            We merge cutting-edge technology, breathtaking design, and storytelling to create worlds that inspire, immerse, and transcend boundaries.
+    <!-- Inspiration Section -->
+    <section id="inspiration" class="content-section">
+        <h2>Inspiration</h2>
+        <p class="section-description">
+            Inspiration är nyckeln till kreativitet. Utforska våra samlingar av berättelser, konstverk och teknik som kan tända din gnista.
         </p>
+        <div class="carousel">
+            <div class="carousel-item active">
+                <img src="resources/images/inspiration1.webp" alt="Inspiration 1">
+                <p>Innovation genom samarbete.</p>
+            </div>
+            <div class="carousel-item">
+                <img src="resources/images/inspiration2.webp" alt="Inspiration 2">
+                <p>Konstens kraft i kodning.</p>
+            </div>
+            <div class="carousel-item">
+                <img src="resources/images/inspiration3.webp" alt="Inspiration 3">
+                <p>En resa genom kreativitetens värld.</p>
+            </div>
+             <!-- Navigation Buttons -->
+        <div class="carousel-nav">
+            <button class="carousel-btn" id="prevBtn">&#10094;</button>
+            <button class="carousel-btn" id="nextBtn">&#10095;</button>
+        </div>
+        </div>
     </section>
 
-    <!-- Story Section -->
-    <section id="story" class="content-section reveal">
-        <h2>Our Story</h2>
-        <p>
-            The concept of <strong>Lumorion</strong> was born from a desire to explore the unseen.  
-            A reflective mist that opens doors to infinite dimensions – each reflection a gateway, every world unique.  
-            At Lumorion Studios, we channel this energy to build experiences that inspire exploration and self-reflection.
+    <!-- Learning Section -->
+    <section id="learning" class="content-section reveal">
+        <h2>Lärande</h2>
+        <p class="section-description">
+            Förvandla din nyfikenhet till färdigheter. Med våra resurser kan du lära dig allt från grunderna till avancerad spelutveckling och programmering.
         </p>
+        <div class="learning-grid">
+            <article class="learning-item">
+                <h3>Interaktiva Kurser</h3>
+                <p>Steg-för-steg guider för att bygga dina egna spel.</p>
+            </article>
+            <!-- Fler lärandeobjekt... -->
+        </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="content-section reveal">
-        <h2>Our Projects</h2>
+        <h2>Våra Projekt</h2>
+        <p class="section-description">
+            Upptäck vad vi har skapat – en fusion av konst, teknik och berättelse.
+        </p>
         <div class="projects-container">
-            <div class="project">
-                <img src="project1.jpg" alt="Project 1">
-                <div class="project-info">
-                    <h3>Portal Horizon</h3>
-                    <p>Explore boundless dimensions through reflective portals in a game of discovery and wonder.</p>
+            <!-- Lägg till fler projekt här -->
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="content-section reveal">
+        <h2>Gemenskap</h2>
+        <p class="section-description">
+            Lumorion Studios är en plats där du kan växa tillsammans med andra. Delta, dela, och forma framtiden för spel och tech.
+        </p>
+        <div class="community-grid">
+            <!-- Fler gemenskapsobjekt... -->
+        </div>
+        <div class="community-spotlight">
+            <h3>Medlemmens Projekt</h3>
+            <div class="spotlight-item">
+                <img src="user_project.jpg" alt="User Project">
+                <div class="spotlight-info">
+                    <h4>Projektnamn</h4>
+                    <p>Av Användare</p>
                 </div>
             </div>
-            <div class="project">
-                <img src="project2.jpg" alt="Project 2">
-                <div class="project-info">
-                    <h3>Reflections AR</h3>
-                    <p>An augmented reality experience merging light, reflection, and reality into one seamless journey.</p>
-                </div>
-            </div>
-            <div class="project">
-                <img src="project3.jpg" alt="Project 3">
-                <div class="project-info">
-                    <h3>World of Echoes</h3>
-                    <p>A narrative-driven experience where choices resonate across parallel worlds.</p>
-                </div>
-            </div>
+            <!-- Fler spotlight-items... -->
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="content-section reveal">
+        <h2>Blogg</h2>
+        <p class="section-description">
+            Håll dig uppdaterad med våra tankar, erfarenheter och insikter inom branschen.
+        </p>
+        <div class="blog-grid">
+            <!-- Lägg till fler blogginlägg här -->
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="content-section reveal">
-        <h2>Contact Us</h2>
-        <p>We’re here to collaborate, create, and inspire. Reach out to us today!</p>
-        <p>Email: <a href="mailto:info@lumorion.com">info@lumorion.com</a></p>
+        <h2>Kontakta Oss</h2>
+        <p class="section-description">
+            Vi är bara ett meddelande bort! Om du har frågor, idéer eller vill samarbeta, hör av dig.
+        </p>
+        <form id="contact-form" action="#" method="post">
+            <!-- Lägg till formulärfält här -->
+        </form>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Lumorion Studios | Reflecting Infinite Worlds</p>
+        <p>© 2024 Lumorion Studios | Utforska, Skapa, Inspireras</p>
     </footer>
+
+    <a href="#" class="back-to-top">↑</a>
+
 </body>
 </html>
