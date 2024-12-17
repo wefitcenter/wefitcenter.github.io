@@ -1,18 +1,23 @@
-// Firebase-konfiguration
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
-import { getAuth } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js";
-import { getDatabase } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-database.js";
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
+import { getDatabase } from "firebase/database";
 
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "DIN_API_KEY",
-  authDomain: "DIN_AUTH_DOMAIN",
-  databaseURL: "DIN_DATABASE_URL",
-  projectId: "DIN_PROJECT_ID",
-  storageBucket: "DIN_STORAGE_BUCKET",
-  messagingSenderId: "DIN_MESSAGING_SENDER_ID",
-  appId: "DIN_APP_ID"
+  apiKey: "AIzaSyAKuTzQGELYyU7dqwC8AKVn3RxycSusY8g",
+  authDomain: "delta-forest.firebaseapp.com",
+  databaseURL: "https://delta-forest-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "delta-forest",
+  storageBucket: "delta-forest.firebasestorage.app",
+  messagingSenderId: "204701067028",
+  appId: "1:204701067028:web:c7db47d92f679a33b24401",
+  measurementId: "G-Y4P9SL76ZZ"
 };
 
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app);
-export const database = getDatabase(app);
+
+// Initialize Firebase modules
+export const auth = getAuth(app); // För autentisering
+export const database = getDatabase(app); // För Realtime Database

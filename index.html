@@ -1,132 +1,52 @@
-<!DOCTYPE html>
-<html>
+<!-- index.html -->
 
-<head>
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DeltaForest001</title>
-    <link rel="stylesheet" href="./resources/css/style.css" type="text/css">
-</head>
+	<title>Login</title> 
+	<link rel="stylesheet" href="./resources/css/style-delta-forest.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+</head> 
 
-<body>
-    <!-- Header börjar här -->
-    <header class="site-header">
-        <h1 class="site-title">CyberForest</h1>
-        <nav class="main-nav">
-            <div class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="menu">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#project">Projects</a></li>
-                <li><a href="html_cheat_sheet.html">Cheat Sheets</a></li>
-                <li><a href="login.html">Delta Forest</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- Header slutar här -->
+<body> 
+    <header>
+        <img src="./resources/images/Deltaforestlogo.png" alt="Delta Forest Logo">
+      </header>
+    
+      <div id="auth-container">
+        <h1>Logga in</h1>
+        <form id="login-form">
+          <input type="email" id="email" placeholder="E-post" required>
+          <input type="password" id="password" placeholder="Lösenord" required>
+          <button type="submit">Logga in</button>
+        </form>
+        
+        <p>Har du inget konto? <a id="register-link" href="#">Registrera dig</a></p>
+        <form id="register-form" style="display: none;">
+          <input type="email" id="reg-email" placeholder="E-post" required>
+          <input type="password" id="reg-password" placeholder="Lösenord" required>
+          <button type="submit">Registrera</button>
+        </form>
+        
+      </div>
+      <script type="module" src="firebase-config.js"></script>
+      <script type="module" src="auth.js"></script>
+      <script type="module" src="script.js"></script>
+      
+    </body>
 
-    <!-- Huvudinnehåll börjar här -->
-    <main>
-        <!-- Om mig sektion -->
-        <section id="om-mig" class="about-section">
-            <h2>About</h2>
-            <p>Whispers of a digital phantom with a code name - CyberForest. Not a mere moniker, but a symbol of unparalleled cybersecurity expertise.
-                Operating from the shadows, this enigmatic figure safeguards the digital wilderness with inventive coding and unwavering dedication.</p>
-
-                 <p>Imagine a guardian of the digital frontier, a master coder who fortifies the very fabric of the internet.  CyberForest's journey began with academic excellence, fueled by a passion for exploration. Now, they leave a trail of groundbreaking projects and impenetrable networks in their wake.
-                    Their mission? <strong>Not just to build, but to ensure every line of code safeguards the very world it creates.</strong></p>
-        </section>
-
-        <!-- Färdigheter sektion -->
-        <section id="skills" class="skills-section">
-            <h2>Skills</h2>
-            <ul>
-                <li><strong>Advanced Cybersecurity: </strong><br>Mastery in penetration testing, ethical hacking, and encryption techniques to safeguard digital assets.</li>
-                <li><strong>Programming Languages: </strong><br>Proficient in Python, JavaScript, and Rust, with a knack for creating efficient, robust code.</li>
-                <li><strong>Web Development: </strong><br>Expertise in HTML, CSS, and modern JavaScript frameworks, crafting responsive, user-centric designs.</li>
-                <li><strong>Database Management: </strong><br>Skilled in SQL and NoSQL databases, ensuring data integrity and security.</li>
-                <li><strong>Tools and Platforms: </strong><br>Versatile use of Git for version control, Docker for containerization, and a deep understanding of Linux environments.</li>
-                <!-- Lägg till fler färdigheter här -->
-            </ul>
-        </section>
-
-        <!-- Projekt sektion -->
-        <section id="project" class="projects-section">
-            <h2>Projects</h2>
-            <article class="project">
-                <h3>The Digital Heaven</h3>
-                <h4><strong>Technologies:</strong> Blockchain, E2EE, React</h4>
-                <img src="path/to/project1-image.jpg" alt="Project 1 image" />
-                <p>A secure, decentralized communication platform designed to offer unparalleled privacy and security. Using end-to-end encryption and blockchain technology,
-                CyberForest001 created a space where conversations remain confidential, and identities protected. The Digital Haven is a testament to the belief that privacy is not just a feature but a right.</p>
-                <a href="link-till-projekt-demo" target="_blank">Digital Heaven Live</a> | <a href="link-till-kod-repo" target="_blank">Code</a>
-            </article>
-            <article class="project">
-                <h3>SentinelAI</h3>
-                <h4><strong>Technologies:</strong> Machine Learning, Python, Node.js</h4>
-                <img src="path/to/project1-image.jpg" alt="Projekt 2 image" />
-                <p>A cutting-edge intrusion detection system powered by artificial intelligence, capable of identifying and neutralizing cyber threats in real-time. SentinelAI learns from past attacks,
-                adapting to new threats with uncanny precision. CyberForest001's vision with SentinelAI was not just to react to cyber threats but to anticipate and prevent them.</p>
-                <a href="link-till-projekt-demo" target="_blank">SentinelAi Overview</a> | <a href="link-till-kod-repo" target="_blank">Code</a>
-            </article>
-            <article class="project">
-                <h3>EcoEncrypt</h3>
-                <h4><strong>Technologies:</strong> Rust, AES, RSA</h4>
-                <img src="path/to/project1-image.jpg" alt="Projekt 3 image" />
-                <p>A lightweight, powerful encryption tool designed for efficiency and strength, EcoEncrypt provides users with the means to secure their data with minimal resource usage.
-                This project reflects CyberForest001's commitment to sustainable software solutions that prioritize security without compromising performance.</p>
-                <a href="link-till-projekt-demo" target="_blank">EcoEncrypt Demo</a> | <a href="link-till-kod-repo" target="_blank">Code</a>
-            </article>
-            <!-- Lägg till fler projekt här -->
-        </section>
-
-        <section id="conclusion" class="conclusion-section">
-            <h2>Conclusion</h2>
-            <p>In a world where digital threats loom large, CyberForest001 embodies the spirit of resilience and innovation. Through their projects,
-            CyberForest001 not only showcases a deep understanding of technology and its potential vulnerabilities but also lights the way for others to follow in creating a safer digital tomorrow.</p>
-        </section>
-
-        <section id="cheat-sheet" class="conclusion-section">
-            <h2>Cheet Sheets</h2>
-            <ul>
-                <li><a href="../wefitcenter.github.io/html_cheat_sheet.html">HTML</a></li>
-                <li><a href="#">CSS</a></li>
-                <li><a href="#">JavaScript</a></li>
-            </ul>
-        </section>
-    </main>
-
-    <!-- Huvudinnehåll slutar här -->
-
-    <!-- Ytterligare resurser eller sidopanel
-    <aside class="sidebar">
-        <h2>Ytterligare Resurser</h2>
-        <ul>
-            <li><a href="#">Länk 1</a></li>
-            <li><a href="#">Länk 2</a></li>
-        </ul>
-    </aside> -->
-
-
-    <!-- Webbplatsens fot -->
-    <footer class="site-footer">
-        <p>© [2024] [CyberForest001]. All Rights Reserved</p>
-    </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const menuToggle = document.querySelector('.menu-toggle');
-            const menu = document.querySelector('.menu');
-
-            menuToggle.addEventListener('click', function() {
-                menu.classList.toggle('active');
-            });
-        });
-    </script>
+    <footer>
+        &copy; 2024 Delta Forest Training. All rights reserved.
+      </footer>
 </body>
+ 
 
 </html>

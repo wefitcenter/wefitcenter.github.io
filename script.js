@@ -133,7 +133,7 @@ submitButton.addEventListener("click", ()=>{
     addToLocalStorage() 
 })
 import { database } from "./firebase-config.js";
-import { ref, set, get, update } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-database.js";
+import { ref, set, get } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-database.js";
 import { auth } from "./firebase-config.js";
 
 const soldierForm = document.getElementById("soldier-form");
@@ -175,4 +175,5 @@ async function loadSoldierProfile() {
 }
 
 loadSoldierProfile();
+
 
